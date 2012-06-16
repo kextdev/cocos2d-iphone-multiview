@@ -21,5 +21,6 @@ Required cocos2d v1.1.0-beta2b
 3.1 *** GL sharegroup - single textures for all views (for fps_images.png)
 
 Note: DirectorIOS/CCDirectorDisplayLink is default director.
- CCDirectorDisplayLinkMultiView don't restore GL context. switchDirector must call before any access to sharedDirector.
-
+ CCDirectorDisplayLinkMultiView don't restore GL context. 
+ switchDirector must call before any access to sharedDirector.
+ not all EAGL methods tested for use switchDirector, example how to use it in EAGLMultiView.
